@@ -18,8 +18,7 @@ export default function Article() {
             </Button>
             
               <CartItem />
-              <CartItem />
-              <CartItem />
+              
         
             <Button className="left">
               <img src={Left} alt="Left" />
