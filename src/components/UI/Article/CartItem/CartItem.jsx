@@ -3,7 +3,7 @@ import style from "../CartItem/CartItem.module.scss";
 
 
 
-export default function CartItem({ techer }) {
+export default function CartItem() {
   return (
     <>
       <div className={style.CartItem}>
