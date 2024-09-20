@@ -5,33 +5,39 @@ import Pic from "../../../assets/header/Pic.png";
 import Serch from "../../../assets/header/serch.png";
 import Group from "../../../assets/header/Group.png";
 import IPhone from "../../../assets/header/iPhone.png";
-import "./header.scss";
+import styles from "./header.module.scss";
 
 function Header() {
   return (
-    <header>
-      <di className="up">
-        <div className="right">
-          <img className="vector" src={Vector} alt="Vector" />
-          <img className="logo" src={Logo} alt="Logo" />
+    <header className={styles.header}>
+      <di className={styles.up}>
+        <div className={styles.right}>
+          <img className={styles.vector} src={Vector} alt="Vector" />
+          <img className={styles.logo} src={Logo} alt="Logo" />
         </div>
-        <img className="Menu" src={Menu} alt="Menu" />
+        <button className={styles.menubg}>
+          <img className={styles.menu} src={Menu} alt="Menu" />
+        </button>
       </di>
-      <div className="p">
-        <h3>یادگیری آنلاین</h3>
-        <p>دسترسی به بیش از 5000 دوره آموزشی از 300 مدرس و موسسه</p>
+      <div className={styles.p}>
+        <h3 className={styles.h}>یادگیری آنلاین</h3>
+        <p className={styles.p1}>
+          دسترسی به بیش از 5000 دوره آموزشی از 300 مدرس و موسسه
+        </p>
       </div>
-      <div className="img">
-        <img className="left" src={Group} alt="vector" />
-        <img className="in" src={Pic} alt="pic" />
+      <div className={styles.img}>
+        <img className={styles.left} src={Group} alt="vector" />
+        <img className={styles.in} src={Pic} alt="pic" />
       </div>
-      <div className="input">
-        <input type="text" />
-        <img src={Serch} alt="serch" />
-      </div>
-      <div className="iPhone">
-        <img src={IPhone} alt="iPhone" />
-      </div>
+      <form className={styles.input}>
+        <div>
+        <input className={styles.input1} type="text" />
+        <img className={styles.serch} src={Serch} alt="serch" />
+        </div>
+        <a className={styles.iphone}>
+        <img className={styles.img1} src={IPhone} alt="iPhone" />
+      </a>
+      </form>
     </header>
   );
 }

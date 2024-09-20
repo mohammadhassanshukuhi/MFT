@@ -1,4 +1,4 @@
-import "./Nav.scss";
+import styles from "./Nav.module.scss";
 import Button from "../Button/Button";
 import Html from "../../../assets/Nav/FileHtml.png";
 import Arrow from "../../../assets/Nav/Frame 34.png";
@@ -17,15 +17,15 @@ import Detective from "../../../assets/nav/Detective.png";
 
 export default function Nav() {
   return (
-    <nav>
-      <h2>دسته‌بندی‌ها</h2>
+    <nav className={styles.nav}>
+      <h2 className={styles.h}>دسته‌بندی‌ها</h2>
       <div>
-        <div className="box">
-          <div className="b-1">
-            <Button>
-              <img src={Html} alt="Html" />
-              <p>برنامه نویسی</p>
-              <img className="arrow" src={Arrow} alt="Arrow" />
+        <div className={styles.box}>
+          <div className={styles.b1}>
+            <Button className={styles.button1}>
+              <img className={styles.img} src={Html} alt="Html" />
+              <p className={styles.p}>برنامه نویسی</p>
+              <img className={styles.arrow} src={Arrow} alt="Arrow" />
             </Button>
             <Button>
               <img src={Pen} alt="PenNib" />

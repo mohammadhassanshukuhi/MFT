@@ -1,4 +1,4 @@
-import "./Data.scss";
+import styles from "./Data.module.scss";
 import word from "../../../assets/data/word.png";
 import pen from "../../../assets/data/pen.png";
 import bord from "../../../assets/data/bord.png";
@@ -11,52 +11,52 @@ import p3 from "../../../assets/data/p3.png"
 export default function Data() {
   return (
     <>
-      <div className="bac">
-        <div className="news">
-          <dic className="new-1">
-            <img className="word" src={word} alt="word" />
-            <div className="NW">
-              <h1 className="NH">جدیدترین مهارت ها را بیاموزید</h1>
-              <p className="NP">
+      <div className={styles.bac}>
+        <div className={styles.news}>
+          <dic className={styles.news1}>
+            <img className={styles.word} src={word} alt="word" />
+            <div className={styles.nw}>
+              <h1 className={styles.nh}>جدیدترین مهارت ها را بیاموزید</h1>
+              <p className={styles.np}>
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
                 استفاده از طراحان گرافیک است.
               </p>
             </div>
           </dic>
-          <dic className="new-2">
-            <img className="word" src={pen} alt="word" />
-            <div className="NW">
-              <h1 className="NH">برای یک شغل آماده شوید</h1>
-              <p className="NP">
+          <dic className={styles.news2}>
+            <img className={styles.word} src={pen} alt="word" />
+            <div className={styles.nw}>
+              <h1 className={styles.nh}>برای یک شغل آماده شوید</h1>
+              <p className={styles.np}>
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
                 استفاده از طراحان گرافیک است.
               </p>
             </div>
           </dic>
-          <dic className="new-2">
-            <img className="word" src={bord} alt="word" />
-            <div className="NW">
-              <h1 className="NH">گواهینامه کسب کنید</h1>
-              <p className="NP">
+          <dic className={styles.news2}>
+            <img className={styles.word} src={bord} alt="word" />
+            <div className={styles.nw}>
+              <h1 className={styles.nh}>گواهینامه کسب کنید</h1>
+              <p className={styles.np}>
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
                 استفاده از طراحان گرافیک است.
               </p>
             </div>
           </dic>
         </div>
-        <img className="backgrand" src={backgrand} alt="" />
-        <div className="names">
+        <img className={styles.background} src={backgrand} alt="" />
+        <div className={styles.names}>
             
-                <img className="hat" src={hat} alt="" />
+                <img className={styles.hat} src={hat} alt="" />
            
         
-                <img className="avatar" src={avatar} alt="" />
+                <img className={styles.avatar} src={avatar} alt="" />
        
             
-                <img className="video" src={video} alt="" />
+                <img className={styles.video} src={video} alt="" />
            
             
-                <img className="p3" src={p3} alt="p3" />
+                <img className={styles.p3} src={p3} alt="p3" />
             
         </div>
       </div>

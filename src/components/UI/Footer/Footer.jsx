@@ -1,4 +1,4 @@
-import "./footer.scss";
+import styles from "./footer.module.scss";
 import Logo from "../../../assets/footer/logo.png";
 import F from "../../../assets/footer/f.png";
 import I from "../../../assets/footer/in.png";
@@ -8,67 +8,67 @@ import Tw from "../../../assets/footer/tw.png";
 export default function Footer() {
   return (
     <>
-      <footer>
-        <div className="bord">
-          <div className="right">
-            <div className="logo">
-              <h1>LOGO</h1>
-              <img src={Logo} alt="Logo" />
+      <footer className={styles.footer}>
+        <div className={styles.board}>
+          <div className={styles.right}>
+            <div className={styles.logo}>
+              <h1 className={styles.h1}>LOGO</h1>
+              <img className={styles.img1} src={Logo} alt="Logo" />
             </div>
-            <div className="paraph">
-              <div className="up">
-                <h2>تماس با ما</h2>
-                <div className="p">
+            <div className={styles.paraph}>
+              <div className={styles.up}>
+                <h2 className={styles.h2}>تماس با ما</h2>
+                <div className={styles.p}>
                   <p>آموزش مجازی با کیفیت برای همه؛ بدون مرز، همیشه، همه‌جا</p>
-                  <p className="p-2">شماره تماس: 09123456789</p>
+                  <p className={styles.p2}>شماره تماس: 09123456789</p>
                   <p>Email: example@mail.com</p>
                 </div>
               </div>
-              <div className="link">
-                <a>
-                  <img src={F} alt="" srcset="" />
+              <div className={styles.link}>
+                <a className={styles.a}>
+                  <img className={styles.img2} src={F} alt="" srcset="" />
                 </a>
-                <a>
-                  <img src={I} alt="" srcset="" />
+                <a className={styles.a}>
+                  <img className={styles.img2} src={I} alt="" srcset="" />
                 </a>
-                <a>
-                  <img src={instagram} alt="" srcset="" />
+                <a className={styles.a}>
+                  <img className={styles.img2} src={instagram} alt="" srcset="" />
                 </a>
-                <a>
-                  <img src={Tw} alt="" srcset="" />
+                <a className={styles.a}>
+                  <img className={styles.img2} src={Tw} alt="" srcset="" />
                 </a>
               </div>
             </div>
           </div>
-          <div className="center">
+          <div className={styles.center}>
             <div>
-              <h1>لینک‌ها</h1>
-              <p>خانه</p>
-              <p className="margin">دوره های آنلاین</p>
-              <p className="margin">آزمون های آنلاین</p>
-              <p className="margin">درباره ما</p>
-              <p className="margin">ارتباط با ما</p>
+              <h1 className={styles.h3}>لینک‌ها</h1>
+              <p className={styles.p3}>خانه</p>
+              <p className={styles.margin}>دوره های آنلاین</p>
+              <p className={styles.margin}>آزمون های آنلاین</p>
+              <p className={styles.margin}>درباره ما</p>
+              <p className={styles.margin}>ارتباط با ما</p>
             </div>
             <div>
-              <h1>دسته‌بندی</h1>
-              <p>خانه</p>
-              <p className="margin">برنامه نویسی</p>
-              <p className="margin">طراحی</p>
-              <p className="margin">کسب و کار</p>
-              <p className="margin">سبک زندگی</p>
-              <p className="margin">عکاسی</p>
-              <p className="margin">موسیقی</p>
+              <h1 className={styles.h3}>دسته‌بندی</h1>
+              <p className={styles.p3}>خانه</p>
+              <p className={styles.margin}>برنامه نویسی</p>
+              <p className={styles.margin}>طراحی</p>
+              <p className={styles.margin}>کسب و کار</p>
+              <p className={styles.margin}>سبک زندگی</p>
+              <p className={styles.margin}>عکاسی</p>
+              <p className={styles.margin}>موسیقی</p>
             </div>
           </div>
-          <div className="shear">
-            <h1>مشترک شدن</h1>
-            <p>
+          <div className={styles.shear}>
+            <h1 className={styles.h4}>مشترک شدن</h1>
+            <p className={styles.p4}>
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
               استفاده از طراحان گرافیک است.{" "}
             </p>
-            <form action="">
-              <input type="email" placeholder="ایمیل را وارد کنید" />
-              <input type="submit" className="button" value="مشترک شدن" />
+            <form className={styles.form} action="">
+              <input className={styles.input} type="email" placeholder="ایمیل را وارد کنید" />
+              <input className={styles.button} type="submit" value="مشترک شدن" />
             </form>
           </div>
         </div>
