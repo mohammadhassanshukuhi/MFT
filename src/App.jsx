@@ -11,16 +11,20 @@ import React, { useEffect, useState } from "react";
 function App() {
   const [api, setApi] = useState([]);
 
-  useEffect(function () {
-    fetch("http://localhost:3030/course/1").then((res) =>
-      res.json().then((res) => {
-        setApi(res);
-      })
-    );
-    console.log(api);
+  async function fechApi(){
+      const res=await fetch ("http://localhost:3030/courses");
+      const data=await res.json()
+      setApi(data)
+    }
+    useEffect(()=> {
+      fechApi()
+   
   }, []);
+
+  console.log(api);
   return (
     <>
+    
       <Header />
       <Nav />
       <Section api={api} />
