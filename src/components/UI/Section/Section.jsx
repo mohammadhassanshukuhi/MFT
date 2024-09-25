@@ -17,7 +17,7 @@ function Section({api}) {
             <Button className="right">
               <img src={Right} alt="Right" />
             </Button>
-            {/* {api.length && api.map((api) => <CartItem key={api.id}></CartItem>)} */}
+            
             <CartItem key={1} api={api} />
             <CartItem key={2} api={api} />
             <CartItem key={3} api={api} />

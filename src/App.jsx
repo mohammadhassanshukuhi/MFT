@@ -12,7 +12,7 @@ function App() {
   const [api, setApi] = useState([]);
 
   useEffect(function () { const fetchData = async () => {
-    const response = await fetch('http://localhost:3030/course/1');
+    const response = await fetch('http://localhost:3030/courses');
     const jsonData = await response.json();
 
     setApi(jsonData);
