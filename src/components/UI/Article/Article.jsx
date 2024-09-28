@@ -17,9 +17,9 @@ export default function Article({ api }) {
             </Button>
              {/* {api.length && api.map((api) => <CartItem key={api.id}></CartItem>)} */}
 
-            <CartItem key={4} api={api} />
+            {/* <CartItem key={4} api={api} />
             <CartItem key={5} api={api} />
-            <CartItem key={6} api={api} />
+            <CartItem key={6} api={api} /> */}
 
             <Button className="left">
               <img src={Left} alt="Left" />

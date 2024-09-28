@@ -1,0 +1,79 @@
+@import "../../font/fonts";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  direction: rtl;
+}
+
+.CartItem {
+  width: 150px;
+  height: 166px;
+  border-radius: 15px 15px 15px 15px;
+  background-color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  .picT {
+    width: 119px;
+    height: 69px;
+    border-radius: 8px;
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+  .text {
+    width: 81px;
+    height: 45px;
+    position: relative;
+    right: 10px;
+    bottom: 8px;
+    color: black;
+    .name {
+      font-family: Vazirmatn;
+      font-size: 7px;
+      font-weight: 700;
+      line-height: 20px;
+      width: 93px;
+      height: 6px;
+      margin-right: 15px;
+      margin-top: 6px;
+      justify-content: right;
+    }
+    .cours {
+      font-family: Vazirmatn;
+      font-size: 8px;
+      font-weight: 400;
+      line-height: 22px;
+      width: 68px;
+      height: 7px;     
+      margin-top: 10px;
+      margin-right: 15px;
+      justify-content: right;
+
+    }
+    .p {
+      font-family: Vazirmatn;
+      font-size: 6px;
+      font-weight: 400;
+      line-height: 9px;
+      width: 78px;
+      height: 8px;
+      margin-right: 15px;
+      margin-top: 10px;
+      color: #868686;
+      justify-content: right;
+
+    }
+    .p2 {
+      width: 120px;
+      height: 14px;
+      font-family: Vazirmatn;
+      font-size: 6px;
+      font-weight: 400;
+      line-height: 22px;
+      gap: 61px;
+      text-align: center;
+      align-items: center;
+    }
+  }
+}

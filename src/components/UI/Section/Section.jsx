@@ -17,10 +17,10 @@ function Section({api}) {
             <Button className="right">
               <img src={Right} alt="Right" />
             </Button>
-            
-            <CartItem key={1} api={api} />
+            {}
+            {/* <CartItem key={1} api={api} />
             <CartItem key={2} api={api} />
-            <CartItem key={3} api={api} />
+            <CartItem key={3} api={api} /> */}
 
             <Button className="left">
               <img src={Left} alt="Left" />

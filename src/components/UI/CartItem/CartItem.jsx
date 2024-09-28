@@ -4,7 +4,7 @@ export default function CartItem({ api, key }) {
   return (
     <>
       <div className={style.CartItem}>
-        {api.leapi.map((api) => {
+        {api.map((api) => {
           console.log(api);
           return (
             <>
