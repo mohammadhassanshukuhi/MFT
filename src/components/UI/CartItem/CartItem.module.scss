@@ -24,11 +24,9 @@
     margin-bottom: 0px;
   }
   .text {
-    width: 81px;
-    height: 45px;
-    position: relative;
-    right: 10px;
-    bottom: 8px;
+    width: 80px;
+    height: 20px;
+
     .name {
       font-family: Vazirmatn;
       font-size: 7px;
@@ -36,41 +34,18 @@
       line-height: 20px;
       text-align: center;
       width: 80px;
-      height: 6px;
-    }
-    .cours {
-      font-family: Vazirmatn;
-      font-size: 5px;
-      font-weight: 700;
-      line-height: 22px;
-      width: 81px;
       height: 4px;
-      color: #3F6745;
-      margin-top: 6px;
-
     }
-    .p {
-      font-family: Vazirmatn;
-      font-size: 4px;
-      font-weight: 400;
-      line-height: 9px;
-      width: 79px;
-      text-align: center;
-      height: 12px;
-      margin-right: 2px;
-      margin-top: 6px;
-      margin-bottom: 6px;
-      color: #868686;
-
-    }
-    .p2 {
-      width: 81px;
-      height: 5px;
-      font-family: Vazirmatn;
-      font-size: 6px;
-      font-weight: 400;
-      line-height: 22px;
-      text-align: center;
-    }
+  }
+  .p {
+    width: 46px;
+    height: 8px;
+    font-family: Vazirmatn FD;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: right;
+    color: #000000;
+    margin-right: 9.5px;
   }
 }

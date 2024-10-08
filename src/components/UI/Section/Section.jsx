@@ -1,33 +1,53 @@
-import "../Article/Article.scss";
-import Button from "../Button/Button";
-import Right from "../../../assets/YourText/Right.png";
-import Left from "../../../assets/YourText/Left.png";
 import CartItem from "../CartItem/CartItem";
-import sec from "../../../assets/YourText/sec.png";
+import React, { useEffect, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
-function Section({api}) {
-  
+import "./Section.scss";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
+function Section() {
+  const [api, setApi] = useState([]);
+
+  useEffect(function () {
+    const fetchData = async () => {
+      const response = await fetch("http://localhost:3030/favs");
+      const jsonData = await response.json();
+
+      setApi(jsonData);
+
+      console.log(jsonData);
+    };
+    fetchData();
+  }, []);
 
   return (
     <>
       <div className="YourText">
         <div className="baner">
           <h1>محبوب‌ترین‌ها</h1>
-          <div className="bord">
-            <Button className="right">
-              <img src={Right} alt="Right" />
-            </Button>
-            {}
-            {/* <CartItem key={1} api={api} />
-            <CartItem key={2} api={api} />
-            <CartItem key={3} api={api} /> */}
 
-            <Button className="left">
-              <img src={Left} alt="Left" />
-            </Button>
-          </div>
+          <Swiper
+            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            spaceBetween={9}
+            slidesPerView={3}
+            navigation
+            pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
+          >
+            {api.map((api) => {
+              return (
+                <SwiperSlide key={api.id}>
+                  {" "}
+                  <CartItem key={api.id} api={api} />{" "}
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
         </div>
-        <img className="sec" src={sec} alt="sec" />
       </div>
     </>
   );
