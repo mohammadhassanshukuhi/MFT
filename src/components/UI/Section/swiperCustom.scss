@@ -3,7 +3,7 @@
   background-color: #ffffff;
   border-radius: 50%;
   width: calc(var(--swiper-navigation-size) / 44 * 30);
-  height: 14px;
+  height: 33px !important;
   color: #000;
   
   &:after {
@@ -26,9 +26,4 @@
 
 .swiper-pagination-bullet {
   background-color: #ffa337;
-}
-.swiper-vertical ,
- .swiper-wrapper {
-    width: 318.01px;
-    height: 146px;
 }
